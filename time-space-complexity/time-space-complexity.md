@@ -88,7 +88,7 @@ The slowest complexity. It involves calculating every possible permutation of a 
 
 When choosing an algorithm, aim for the left side of this scale:
 
-https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcR0cOwTn2j0CTL9AcBEba6Ud5i9ajzAtnxPRAikBNRoDFT0rqacAgV6X7cERhSJn5g1VrzDUVh9ztBuyz1zD1j46dwEYkC4nPukoqsaQe3sUG4hZok
+![alt text](image.png)
 
 **Excellent** → **Fair** → **Bad** → **Horrible** **O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(n!)**
 
