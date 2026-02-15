@@ -1,6 +1,14 @@
-# Algorithm Complexity: Time and Space Complexity 🚀
+# Understanding Algorithm Complexity (Big O)
 
-This documentation provides a beginner-friendly breakdown of how we measure the efficiency of code using **Big O Notation**.
+Algorithm complexity explains how much time or memory an algorithm needs to solve a problem as the size of the input increases.
+
+**What this really means**
+
+When we give an algorithm more data:
+Will it slow down a little or a lot?
+Will it use slightly more memory or much more memory?
+
+Algorithm complexity answers these questions by studying the growth pattern of an algorithm.
 
 ---
 
