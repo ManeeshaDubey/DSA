@@ -18,14 +18,13 @@ Example(n = 6)
 let n = 6;
 for (let i = 0; i < n; i++) {
   let row = "";
-  let value = 0;
+  let toggle = 1;
   for (let j = 0; j <= i; j++) {
-    if (value === 1) {
-      value = 0;
-      row = row + value;
+    row = row + toggle;
+    if (toggle == 1) {
+      toggle = 0;
     } else {
-      value = 1;
-      row = row + value;
+      toggle = 1;
     }
   }
   console.log(row);
