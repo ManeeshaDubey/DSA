@@ -71,9 +71,11 @@ function repeatWord(word, n) {
 }
 
 ```
-Time: O(n)
+Time: O(n^2)
 
-Space: O(1)
+Space: O(n)
+
+Why? In many languages (like JavaScript), strings are immutable. Every time you do result += word, the computer creates a brand new string and copies the old characters over. Doing this n times makes it quadratic time. Because you are building a string of length n, it takes O(n) space.
 
 ---
 
@@ -170,9 +172,9 @@ function factorial(n) {
 }
 
 ```
-Time: ?
+Time: O(n)
 
-Space: ?
+Space: O(n)
 
 **12. Fibonacci (Recursive)**
 
@@ -183,6 +185,9 @@ function fib(n) {
 }
 
 ```
+Time: log(2^n)
+
+Space: O(n)
 
 **13. Merge Sort (Concept)**
 
@@ -195,7 +200,7 @@ function mergeSort(arr) {
 ```
 Time: log(nlogn)
 
-Space: O(1)
+Space: O(n)
 
 **14. 2D Matrix Search**
 
@@ -209,9 +214,9 @@ function findInMatrix(matrix, n) {
 }
 
 ```
-Time: ?
+Time: O(n^2)
 
-Space: ?
+Space: O(1)
 
 **15. Object Mapping**
 
@@ -225,9 +230,9 @@ function createMap(arr) {
 }
 
 ```
-Time: ?
+Time: O(n)
 
-Space: ?
+Space: O(n)
 
 ---
 
@@ -245,7 +250,7 @@ function complex(n) {
 }
 
 ```
-Time: O(n^2)
+Time: O(nlogn)
 
 Space: O(1)
 
@@ -256,9 +261,9 @@ Space: O(1)
 function getPermutations(str) { ... }
 
 ```
-Time: O(n)
+Time: O(n!)
 
-Space: O(n)
+Space: O(n!)
 
 **18. Recursive Binary Search**
 
@@ -273,7 +278,7 @@ function recBinarySearch(arr, low, high, target) {
 ```
 Time: O(logn)
 
-Space: O(n)
+Space: O(logn)
 
 **19. Triple Nested Loop**
 
@@ -306,7 +311,7 @@ function findPrimes(n) {
 }
 
 ```
-Time: O(n^2)
+Time: O(nloglogn)
 
 Space: O(n)
 
