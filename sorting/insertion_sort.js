@@ -1,16 +1,16 @@
 //Insertion Sort
 
 function insertionSort(arr) {
-    for (let i = 0; i < arr.length - 1; i++){
-        for (let j = i + 1; j > 0; j--){
-            if (arr[j] < arr[j - 1]) {
-                let temp = arr[j];
-                arr[j] = arr[j - 1];
-                arr[j - 1] = temp;
-            }
-        }
+  for (let i = 0; i < arr.length; i++) {
+    let current = arr[i];
+    let previous = i - 1;
+    while (current < arr[previous] && previous >= 0) {
+      arr[previous + 1] = arr[previous];
+      previous--;
     }
-    return arr;
+    arr[previous + 1] = current;
+  }
+  return arr;
 }
 
 let nums = [12, 4, 8, 3, 10];
